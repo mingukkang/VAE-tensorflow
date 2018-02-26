@@ -35,13 +35,19 @@
 **3. Manifold of MNIST Data**
 ## Reference Papers
 **1. https://arxiv.org/abs/1312.6114**
+
 **2. https://arxiv.org/abs/1606.05908**
 
 ## References
 
-**5.http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html**
-**5.http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html**
-**5.http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html**
-**5.http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html**
-**5.http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html**
+**1.https://github.com/hwalsuklee/tensorflow-mnist-VAE**
+
+**2.https://github.com/shaohua0116/VAE-Tensorflow**
+
+**3.http://cs231n.stanford.edu/**
+
+**4.https://www.facebook.com/groups/TensorFlowKR/permalink/496009234073473/?hc_location=ufi**
+
+**-- Above Reference is ppt which is distributed by Hwal-Suk Lee from tensorflow korea**
+
 **5.http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html**

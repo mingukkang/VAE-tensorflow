@@ -107,8 +107,16 @@ def Variational_autoencoder(X,n_hidden_encoder,n_z, n_hidden_decoder, keep_prob 
 
 ![사진5](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/Result1.PNG)
 
-|**Distribution of MNIST|**Manifold of MNIST|
-|![사진6](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/result2.png)|![사진7](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/result3.png)|
+<table align='center'>
+<tr align='center'>
+<td> Distribution of MNIST </td>
+<td> Manifold of MNIST </td>
+</tr>
+<tr>
+<td><img src = 'images/result2.png' height = '400px'>
+<td><img src = 'images/result3.png' height = '400px'>
+</tr>
+</table>
 
 ## Reference Papers
 **1. https://arxiv.org/abs/1312.6114**

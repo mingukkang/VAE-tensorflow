@@ -24,7 +24,7 @@
 
 **1. Gaussian Encoder**
 
-```
+```python
 def Bernoulli_decoder(z, n_hidden, n_out ,keep_prob):
     w_init = tf.contrib.layers.xavier_initializer()
     z_shape = z.get_shape()

@@ -48,6 +48,6 @@
 
 **4.https://www.facebook.com/groups/TensorFlowKR/permalink/496009234073473/?hc_location=ufi**
 
-**-- Above Reference is ppt which is distributed by Hwal-Suk Lee from tensorflow korea**
+**-- Above Reference is ppt which is distributed by Hwal-Suk Lee from facebook page tensorflow korea**
 
 **5.http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html**

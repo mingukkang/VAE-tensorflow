@@ -103,10 +103,11 @@ def Variational_autoencoder(X,n_hidden_encoder,n_z, n_hidden_decoder, keep_prob 
 ```
 
 ## Result
-**1. Comparing the generated images with the original images**
+**1. Comparing the generated images with the original images(n_z = 10)**
 
 ![사진5](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/Result1.PNG)
 
+**2. Result, When n_z =2**
 <table align='center'>
 <tr align='center'>
 <td> Distribution of MNIST </td>

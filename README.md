@@ -23,7 +23,35 @@
 ## Code
 
 **1. Gaussian Encoder**
-
+```python
+def gaussian_encoder(X, n_hidden, n_z, keep_prob):
+    w_init = tf.contrib.layers.xavier_initializer()
+    input_shape = X.get_shape()
+    
+    with tf.variable_scope("encoder_hidden_1", reuse = tf.AUTO_REUSE):
+        w1 = tf.get_variable("w1", shape = [input_shape[1], n_hidden], initializer = w_init)
+        b1 = tf.get_variable("b1", shape = [n_hidden], initializer = tf.constant_initializer(0.))
+        h1 = tf.matmul(X,w1) + b1
+        h1 = tf.nn.elu(h1)
+        h1 = tf.nn.dropout(h1, keep_prob)
+        
+    with tf.variable_scope("encoder_hidden_2", reuse = tf.AUTO_REUSE):
+        w2 = tf.get_variable("w2", shape = [n_hidden,n_hidden], initializer = w_init)
+        b2 = tf.get_variable("b2", shape = [n_hidden], initializer = tf.constant_initializer(0.))
+        h2 = tf.matmul(h1,w2) + b2
+        h2 = tf.nn.elu(h2)
+        h2 = tf.nn.dropout(h2,keep_prob)
+    
+    with tf.variable_scope("encoder_z", reuse = tf.AUTO_REUSE):
+        w3 = tf.get_variable("w3", shape = [n_hidden, n_z*2], initializer = w_init)
+        b3 = tf.get_variable("b3", shape = [n_z*2], initializer = tf.constant_initializer(0.))
+        h3 = tf.matmul(h2,w3) + b3
+        mean = h3[:, : n_z]
+        std = tf.nn.softplus(h3[:, n_z :]) + 1e-6
+    
+    return mean, std
+```
+**2. Bernoulli Decoder**
 ```python
 def Bernoulli_decoder(z, n_hidden, n_out ,keep_prob):
     w_init = tf.contrib.layers.xavier_initializer()
@@ -51,10 +79,6 @@ def Bernoulli_decoder(z, n_hidden, n_out ,keep_prob):
         
         return h6
 ```
-
-**2. Bernoulli Decoder**
-
-![사진3](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/Bernoulli_decorder.PNG)
 
 **3. Variational AutoEncoder**
 

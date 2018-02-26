@@ -24,9 +24,15 @@
 
 **1. Gaussian Encoder**
 
+![사진2](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/Gaussian_encoder.PNG)
+
 **2. Bernoulli Decoder**
 
+![사진3](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/Bernoulli_decorder.PNG)
+
 **3. Variational AutoEncoder**
+
+![사진4](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/Variational_Autoencoder.PNG)
 
 ## Result
 

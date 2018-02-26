@@ -113,8 +113,8 @@ def Variational_autoencoder(X,n_hidden_encoder,n_z, n_hidden_decoder, keep_prob 
 <td> Manifold of MNIST </td>
 </tr>
 <tr>
-<td><img src = 'images/result2.png' height = '400px'>
-<td><img src = 'images/result3.png' height = '400px'>
+<td><img src = 'image/result2.png' height = '400px'>
+<td><img src = 'image/result3.png' height = '400px'>
 </tr>
 </table>
 

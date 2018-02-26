@@ -9,7 +9,9 @@
 
 ## Enviroment
 **- OS: window 10(64bit)**
+
 **- Python 3.5**
+
 **- Tensorflow-gpu version:  1.3.0rc2**
 
 ## Schematic of VAE

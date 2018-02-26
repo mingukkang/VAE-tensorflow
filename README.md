@@ -18,6 +18,8 @@
 
 ## Schematic of VAE
 
+![사진1](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/model.PNG)
+
 ## Code
 
 **1. Gaussian Encoder**

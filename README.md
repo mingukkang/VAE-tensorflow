@@ -81,8 +81,26 @@ def Bernoulli_decoder(z, n_hidden, n_out ,keep_prob):
 ```
 
 **3. Variational AutoEncoder**
-
-![사진4](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/Variational_Autoencoder.PNG)
+```python
+def Variational_autoencoder(X,n_hidden_encoder,n_z, n_hidden_decoder, keep_prob ):
+    X_shape = X.get_shape()
+    n_output = X_shape[1]
+    
+    mean, std = gaussian_encoder(X,n_hidden_encoder, n_z,keep_prob)
+    
+    z = mean + std*tf.random_normal(tf.shape(mean,out_type = tf.int32), 0, 1, dtype = tf.float32)
+    
+    X_out = Bernoulli_decoder(z,n_hidden_decoder,n_output,keep_prob)
+    X_out = tf.clip_by_value(X_out,1e-8, 1 - 1e-8)
+    
+    likelihood = tf.reduce_mean(tf.reduce_sum(X*tf.log(X_out) + (1-X)*tf.log(1- X_out),1))
+    KL_Divergence = tf.reduce_mean(0.5*tf.reduce_sum(1 - tf.log(tf.square(std) + 1e-8) + tf.square(mean) + tf.square(std), 1))       
+    Recon_error = -1*likelihood
+    Regularization_error = KL_Divergence
+    ELBO = Recon_error + Regularization_error 
+    
+    return  z ,X_out, Recon_error, Regularization_error, ELBO
+```
 
 ## Result
 **1. Comparing the generated images with the original images**

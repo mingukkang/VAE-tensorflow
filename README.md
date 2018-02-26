@@ -35,18 +35,21 @@
 ![사진4](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/Variational_Autoencoder.PNG)
 
 ## Result
-
+```
 **1. Comparing the generated images with the original images**
 
 ![사진5](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/Result1.PNG)
-
+```
+```
 **2. Distribution of MNIST Data**
 
 ![사진6](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/result2.png)
-
+```
+```
 **3. Manifold of MNIST Data**
 
 ![사진7](https://github.com/MINGUKKANG/VAE_tensorflow/blob/master/image/result3.png)
+```
 
 ## Reference Papers
 **1. https://arxiv.org/abs/1312.6114**

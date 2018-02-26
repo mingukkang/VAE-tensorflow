@@ -1,4 +1,4 @@
-##Variaional AutoEncoder-Tensorflow
+## Variaional AutoEncoder-Tensorflow
 
 **I Write the code of Variational AutoEncoder using the tensorflow**
 
